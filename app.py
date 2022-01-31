@@ -24,7 +24,6 @@ model = load_model('./static/model_5.h5')
 idx_word_dic = pickle.load(open('./static/idx_word_dic.pkl',"rb"))
 tokenizer = pickle.load(open('./static/tokenizer.pkl', 'rb'))
 max_length = pickle.load(open('./static/max_length.pkl', 'rb'))
-captions_dic =  pickle.load(open("./static/captions_dic.pkl", 'rb'))
 
 @app.route('/')
 def home():
