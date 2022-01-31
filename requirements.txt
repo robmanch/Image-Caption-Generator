@@ -66,7 +66,7 @@ Pygments==2.11.2
 pyparsing==3.0.6
 python-dateutil==2.8.2
 pytz==2021.3
-pywin32==303
+pywin32
 pyzmq==22.3.0
 regex==2022.1.18
 requests==2.27.1
