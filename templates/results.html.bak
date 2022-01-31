@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+<h1>Captionista</h1>
+ <form action = "{{ url_for('predict')}}" method = "POST" enctype = "multipart/form-data">
+    <table align="center">
+        <tr>
+            <input type = "file" name = "file"  required="required"/>
+        </tr>
+    </table>
+    <button type="submit" class="btn">Predict</button>
+ </form>
+     <table align="center">
+         <tr>
+             <td>
+                <img src="data:;base64,{{ res_image }}"/>
+             </td>
+         </tr>
+         <tr>
+             <td>
+              {{ result }}
+             </td>
+         </tr>
+		 <tr>
+             <td>
+                <audio controls>
+					<source src="speech_1.mp3" type="audio/mpeg">
+             </td>
+         </tr>
+		 
+     </table>
+</body>
+</html>
