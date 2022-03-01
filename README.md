@@ -375,7 +375,7 @@ It is also possible to merge both projects we did to create a complete solution 
 ### 6.0 REFERENCES 
 
  
-
+- adityajn105. "Flikr8K Dataset", https://www.kaggle.com/adityajn105/flickr8k
 - Brownlee, Jason. “How to Develop a Deep Learning Photo Caption Generator from Scratch.” Machine Learning Mastery, 23 Dec. 2020, https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/.  
 - Perumanoor, Tinsy John. “What Is VGG16?  -  Introduction to VGG16.” Medium, Great Learning, 23 Sept. 2021, https://medium.com/@mygreatlearning/what-is-vgg16-introduction-to-vgg16-f2d63849f615.  
 - Sharma, Pranshu. “Understanding Transfer Learning for Deep Learning.” Analytics Vidhya, 30 Oct. 2021, https://www.analyticsvidhya.com/blog/2021/10/understanding-transfer-learning-for-deep-learning/.  
