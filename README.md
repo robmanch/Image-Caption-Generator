@@ -249,7 +249,7 @@ After all the data pre-processing steps, now it is time to build a model that ca
 For better understanding, a high-level model architecture is built which clearly shows these stages 
 
  
-![image](https://user-images.githubusercontent.com/62516990/156242421-8a3063ea-b794-4f24-af4a-d00677207431.png)
+![image](https://user-images.githubusercontent.com/62516990/156244450-b5e1b95d-6e8d-4336-a1f2-a109cd815a57.png)
 
 Figure 7: Model Architecture 
 
@@ -273,7 +273,7 @@ This encoder deals with text sequences that have been created in text preprocess
 Next, an LSTM layer is implemented with 256 units of LSTM blocks that convert the (None, 37, 256) to (None, 256), and this represents the text encoding for a given text sequence. 
 
  
-![image](https://user-images.githubusercontent.com/62516990/156242569-c2bc5129-1511-4707-85d9-fdce10285576.png)
+![image](https://user-images.githubusercontent.com/62516990/156244516-49ad6b51-9f12-4297-88cf-4d401bd7d38e.png)
 
 Figure 8: Embeddings 
 
@@ -284,7 +284,7 @@ Now we have the image encoding (None, 256), and the text encodings (None, 256). 
 A dense layer with neurons same as vocab_size and SoftMax activation is used as an output layer. 
 
  
-![image](https://user-images.githubusercontent.com/62516990/156242641-87384a64-b4e4-45a0-b992-eccb71cc097d.png)
+![image](https://user-images.githubusercontent.com/62516990/156244559-a0f26ac8-b257-41ba-b6b8-05e7bfbd9cd0.png)
 
 Figure 9: NN with SoftMax 
 
